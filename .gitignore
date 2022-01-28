@@ -1,0 +1,6 @@
+.env
+build
+node_modules
+appConfig.js
+.twiliodeployinfo
+.twilioserverlessrc
