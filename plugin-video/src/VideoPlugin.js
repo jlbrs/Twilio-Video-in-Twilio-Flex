@@ -19,7 +19,7 @@ export default class VideoPlugin extends FlexPlugin {
     // Video is not a default channel, so we need to register a new one.
     flex.TaskChannels.register({
       name: "video",
-      isApplicable: (task) => task.taskChannelUniqueName === process.env.REACT_APP_VIDEO_TASK_CHANNEL_UNIQUE_NAME,
+      isApplicable: (task) => task.taskChannelUniqueName === "video",
       icons: {
         list: 'Video',
         main: 'Video',

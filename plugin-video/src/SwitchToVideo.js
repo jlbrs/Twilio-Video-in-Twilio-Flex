@@ -5,10 +5,11 @@ import { CameraOnIcon } from './VideoIcons';
 const buttonStyle = {
   padding: '0px 16px',
   border: 'none',
-  background: 'linear-gradient(to top, rgb(211, 211, 211), rgb(201, 201, 201))',
+  background: '#ccc',
   outline: 'none',
   alignSelf: 'center',
   height: '28px',
+  marginLeft: '1em',
   fontSize: '10px',
   fontWeight: 'bold',
   letterSpacing: '2px',
