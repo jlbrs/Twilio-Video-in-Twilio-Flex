@@ -1,5 +1,5 @@
 import React from 'react';
-import { Icon, withTaskContext } from '@twilio/flex-ui';
+import { Actions, Icon, withTaskContext } from '@twilio/flex-ui';
 import { CameraOnIcon } from './VideoIcons';
 
 const buttonStyle = {
@@ -29,7 +29,7 @@ class SwitchToVideo extends React.Component {
       .then((response) => response.json())
       .then((response) => {
         console.log('SwitchToVideo: unique link created:', response);
-        return this.props.flex.Actions.invokeAction("SendMessage", { body: `Please join me using this unique video link: ${response.full_url}`, channelSid: this.props.task.attributes.channelSid });
+        return this.props.flex.Actions.invokeAction("SendMessage", { body: `Please join me using this unique video link: ${response.full_url}`, conversationSid: this.props.task.attributes.conversationSid });
       })
       .finally(() => {
         this.setState({loading: false});

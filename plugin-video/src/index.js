@@ -1,4 +1,4 @@
-import * as FlexPlugin from 'flex-plugin';
+import * as FlexPlugin from '@twilio/flex-plugin';
 import VideoPlugin from './VideoPlugin';
 
 FlexPlugin.loadPlugin(VideoPlugin);
